@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #080808;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    background-image: url(DALL·E\ 2023-03-19\ 10.33.43\ -\ background\ image\ futuristic\ blue\ and\ black.png);
+    background-size: cover; /* ajusta a imagem para cobrir todo o elemento */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-attachment: fixed; /* faz a imagem ficar fixa no lugar */
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #13b8ff, 0 0 40px #13b8ff, 0 0 60px #13b8ff, 0 0 80px #13b8ff, 0 0 100px #13b8ff, 0 0 120px #13b8ff;
+    animation: blink 3s infinite;
+  }
+
+  #links{
+    position: absolute;
+    transform: translateY(-90px);
+    margin-left: 15px;
+  }
+
+  #links a{
+    text-decoration: none;
+    color: #13b8ff;
+    padding: 10px;
+    border: 1px solid #13b8ff;
+  }
+
+  #links a:hover{
+    transition: 1s;
+    color: #171717;
+    background-color: #13b8ff;
+    padding: 10px;
+    border: 1px solid #13b8ff;
+  }
+
+  #user {
+    position: relative;
+    width: 100%;
+    background-color: #eee;
+  }
+  
+  #nomeSalvo {
+    position: absolute;
+    right: 13px;
+    text-align: right;
+    font-size: 25px;
+  }
+
+  form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 30px;
+    height: 180px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.8); /* cor quase transparente */
+  }
+
+  form input[type="text"] {
+    text-align: center;
+    background-color: #171717;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid #13b8ff; 
+    background: none; 
+    outline: none;
+  }
+
+  button {
+    background-color: #13b8ff;
+    color: #fff;
+    border: 1.5px solid #13b8ff;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    transition-duration: 0.5s;
+    border: 1.5px solid #13b8ff;
+    background-color: transparent;
+  }
+
+  @keyframes blink {
+    0% {color: #13b8ff;}
+    50% {color: #fff;}
+    100% {color: #13b8ff;}
+  }

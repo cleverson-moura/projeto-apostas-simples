@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Billion Bet-0 a 6</title>
+  <link rel="shortcut icon" href="../226904.png" type="image/x-icon">
+  <link rel="stylesheet" href="sp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="user">
+    <p id="nomeSalvo"></p>
+  </div>
+  <h1><a href="../Página Inicial/index.html">Billion Bet</a></h1>
+  <div class="container">
+    <div id="form">
+      <p>Tente adivinhar o número de 0 a 6!</p>
+      <input type="number" min="0" max="6" id="guess" placeholder="Digite um número de 0 a 6">
+      <p>Aposte um valor</p>
+      <input type="number" min="1" id="aposta" placeholder="Valor"><br>
+      <button id="submit" onclick="showLoading()">Enviar</button>
+    </div>
+    <div id="paragrafo">
+      <p id="result"></p>
+      <p><span id="score">0</span></p>
+      <p><span id="num">0</span></p>
+      <p><span id="high-score">0</span></p>
+
+      <button id="myBtn">?</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Aposte em um número de 0 a 6 ou aposte TUDO o que tem para multiplicar pela própria aposta.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <img src="../wave.svg" width="100%">
+  <a href="" onclick="reset()" id="reset">Reset</a>
+  <script src="sp.js"></script>
+</body>
+</html>

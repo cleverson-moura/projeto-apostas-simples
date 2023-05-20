@@ -1,0 +1,176 @@
+body {
+  background-color: #080808;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h1 a{
+  text-decoration: none;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #13b8ff, 0 0 40px #13b8ff, 0 0 60px #13b8ff, 0 0 80px #13b8ff, 0 0 100px #13b8ff, 0 0 120px #13b8ff;
+  animation: blink 3s infinite;
+}
+
+#user {
+  position: relative;
+  width: 100%;
+  background-color: #eee;
+}
+
+#nomeSalvo {
+  position: absolute;
+  right: 13px;
+  text-align: right;
+  font-size: 25px;
+}
+
+#form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#form p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#form input[type="number"] {
+  text-align: center;
+  background-color: #171717;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid #13b8ff; 
+  background: none; 
+  outline: none;
+}
+
+button {
+  background-color: #13b8ff;
+  color: #fff;
+  border: 1.5px solid #13b8ff;
+  font-size: 24px;
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  transition-duration: 0.5s;
+  border: 1.5px solid #13b8ff;
+  background-color: #080808;
+}
+
+#paragrafo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#result {
+  font-size: 36px;
+  margin-bottom: 20px;
+  transform: translateX(50px);
+}
+
+#score, #num, #high-score {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#score {
+  border: 3px solid;
+  border-color: #13b8ff;
+  border-radius: 30px;
+  padding: 7px;
+}
+
+#score:before {
+  content: "R$ ";
+}
+
+#num:before {
+  content: "Número sorteado: ";
+}
+
+#high-score:before {
+  content: "Recorde: R$ ";
+}
+
+img{
+  position: absolute;
+}
+
+#reset{
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  color: #13b8ff;
+}
+
+/*pop-up*/
+#myBtn{
+  width: min-content;
+}
+.modal {
+  display: none; /* oculta o elemento por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #000000;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {color: #13b8ff;}
+  50% {color: #fff;}
+  100% {color: #13b8ff;}
+}

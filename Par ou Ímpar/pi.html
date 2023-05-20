@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Billion Bet-Par ou ÍMPAR</title>
+  <link rel="shortcut icon" href="../226904.png" type="image/x-icon">
+  <link rel="stylesheet" href="pi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="user">
+    <p id="nomeSalvo"></p>
+  </div>
+  <h1><a href="../Página Inicial/index.html">Billion Bet</a></h1>
+  <div class="container">
+    <div id="form">
+      <p>Escolha entre PAR ou ÍMPAR</p>
+      <select id="guess">
+        <option value="par">PAR</option>
+        <option value="impar">ÍMPAR</option>
+      </select>
+      <p>Aposte um valor</p>
+      <input type="number" min="1" id="aposta" placeholder="Valor"><br>
+      <button id="submit" onclick="showLoading()">Enviar</button>
+    </div>
+    <div id="paragrafo">
+      <p id="result"></p>
+      <p><span id="score">0</span></p>
+      <p><span id="num">0</span></p>
+      <p><span id="high-score">0</span></p>
+
+      <button id="myBtn">?</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Neste jogo voçê só poderá apostar tudo o que tem e seu valor será dobrado.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <a href="" onclick="reset()" id="reset">Reset</a>
+  <img src="../wave.svg" width="100%">
+  <script src="pi.js"></script>
+</body>
+
+</html>
